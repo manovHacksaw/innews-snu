@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 /* Container for the entire news tile and top-read section */
 .news-tiles-container {
     display: flex;
@@ -39,11 +50,13 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'FigN';
 }
 
 .tile-description {
     font-size: 1rem;
     margin-bottom: 10px;
+    font-family: 'FigI'; 
 }
 
 .tile-author-date {
@@ -51,6 +64,7 @@
     justify-content: space-between;
     font-size: 0.9rem;
     color: gray;
+    font-family: 'FigI'; 
 }
 
 /* Top-read section styling */
@@ -94,6 +108,7 @@
     font-size: 0.9rem;
     color: #0a0a59;
     font-weight: 600;
+    font-family: 'FigI'; 
 }
 
 

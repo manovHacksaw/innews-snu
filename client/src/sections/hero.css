@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 /* General slider container */
 .top-news {
     width: 100%;
@@ -42,6 +53,7 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: 'FigN'; 
 }
 
 /* Description styling */
@@ -50,6 +62,7 @@
     line-height: 1.4;
     margin-bottom: 10px;
     max-width: 90%;
+    font-family: 'FigI'; 
 }
 
 /* Author and date container */

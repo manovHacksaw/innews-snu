@@ -1,3 +1,8 @@
+
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
 /* Style for the CategoryBar component */
 
 .category-bar {
@@ -20,6 +25,7 @@
 .category-item {
     font-size: 1rem;
     font-weight: bold;
+    font-family: 'Noto'; 
 }
 
 .category-link {

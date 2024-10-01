@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,9 +29,8 @@
     border-bottom-right-radius: .2rem;
 }
 
-#navbar h1{
-    font-size: 2.4rem;
-    color: white;
+#navbar a img{
+    width: 12rem;
 }
 
 #navbar ul{
@@ -32,6 +45,8 @@
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
+    font-family: 'Noto'; 
+    /* font-family: 'FigN';  */
 }
 
 /* apply host button  */

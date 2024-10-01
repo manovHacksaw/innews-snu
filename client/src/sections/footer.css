@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
 .footer {
     background-color: #f8f5f5; /* Dark background */
     color: 0a0a59; /* White text */
@@ -22,8 +27,9 @@
     flex: 1;
 }
 
-.footer-nav h4, .footer-social h4 {
+.footer-nav h4 {
     margin-bottom: 10px;
+    font-family: 'Noto';
 }
 
 .footer-nav ul, .footer-social ul {
@@ -33,6 +39,8 @@
 
 .footer-nav li, .footer-social li {
     margin: 5px 0;
+    font-family: 'Noto';
+    font-size: 1rem;
 }
 
 .footer-nav a, .footer-social a {

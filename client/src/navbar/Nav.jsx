@@ -7,7 +7,9 @@ export default function Nav() {
   return (
     <div>
         <nav id="navbar" className="navbar">
-            <h1>News Scope</h1>
+            <a href="/">
+              <img src="/images/logoNav.png" alt="logo" />
+            </a>
             <ul>
               {navs.map((nav) => (
                   <li key={nav.id}>
