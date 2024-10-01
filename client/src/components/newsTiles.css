@@ -1,0 +1,79 @@
+/* Container for the entire news tile and top-read section */
+.news-tiles-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Grid of news tiles (3 per row) */
+.news-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between tiles */
+    width: 70%; /* Take up 70% of the space */
+}
+
+/* Individual news tile styling */
+.news-tile {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.news-tile:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.tile-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tile-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tile-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tile-author-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* Top-read section styling */
+.top-read {
+    width: 25%; /* Take up 25% of the space */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-read h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.top-read-item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.top-read-item:hover {
+    text-decoration: underline;
+}
