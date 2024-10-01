@@ -28,7 +28,7 @@ const Feed = () => {
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
         .slice(0, 4); // Top 4 for Hero section
 
-    const topRead = news // Assume you have a way to determine top-read articles, such as a field in the data
+    const topRead = news 
         .sort((a, b) => b.readCount - a.readCount)
         .slice(0, 5); // Top 5 most-read articles
 
@@ -42,9 +42,6 @@ const Feed = () => {
             {news.length > 0 ? (
                 <>
                     <NewsTiles articles={latestNews} topRead={topRead} />
-                    {/* {news.map(item => (
-                        <Article key={item._id} article={item} />
-                    ))} */}
                 </>
             ) : (
                 <p>No news available.</p>

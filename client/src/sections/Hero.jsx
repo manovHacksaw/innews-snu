@@ -4,8 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { NextArrow, PrevArrow } from './CustomArrow';
 import './hero.css';
+import { Link } from 'react-router-dom';
 
-export default function Hero({ articles }) {
+export default function Hero({ articles, onArticleSelect }) {
     const settings = {
         dots: true,
         infinite: true,
@@ -14,8 +15,8 @@ export default function Hero({ articles }) {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        nextArrow: <NextArrow />, 
-        prevArrow: <PrevArrow />, 
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
     };
 
     return (
@@ -23,6 +24,7 @@ export default function Hero({ articles }) {
             <Slider {...settings}>
                 {articles.map((article) => (
                     <div key={article._id} className="slider-item">
+                    <Link to={`/article/${article._id}`}>
                         <div className="image-container">
                             <img src={article.thumbnail} alt={article.title} className="article-thumbnail" />
                             <div className="text-overlay">
@@ -34,6 +36,7 @@ export default function Hero({ articles }) {
                                 </div>
                             </div>
                         </div>
+                    </Link>
                     </div>
                 ))}
             </Slider>

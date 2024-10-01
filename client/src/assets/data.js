@@ -18,3 +18,8 @@ export const navs = [
       active: false,
     },
 ];
+
+export const category = [
+  'Politics', 'Sports', 'Technology', 'Health', 'Business',
+  'Entertainment', 'Science', 'World', 'Lifestyle'
+];
