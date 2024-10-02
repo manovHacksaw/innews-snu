@@ -1,5 +1,5 @@
 import React from 'react';
-import { category } from '../assets/data'; // Ensure the data is correctly imported
+import { category } from '../assets/data';
 import './CategoryBar.css';
 
 const CategoryBar = () => {

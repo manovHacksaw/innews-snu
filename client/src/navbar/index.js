@@ -1,3 +1,4 @@
 import Nav from "./Nav";
+import CategoryBar from "./CategoryBar";
 
-export {Nav}
+export {Nav, CategoryBar}
