@@ -109,3 +109,32 @@
 .slick-dots li.slick-active button:before {
     color: white;
 }
+
+/* media  */
+
+@media (max-width: 480px){
+    .top-news {
+        height: 40vh;
+    }
+    
+    .slider-item{
+        height: 40vh;
+
+    }
+
+    .article-title {
+        font-size: 2rem; 
+    }
+    
+    /* Description styling */
+    .article-description {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+    
+    /* Author and date container */
+    .article-details {
+        font-size: 0.6rem;
+    }
+
+}

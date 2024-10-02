@@ -80,3 +80,30 @@
     display: flex;
     gap: 0.8rem;
 }
+
+
+/* responsive */
+
+@media (max-width: 480px) {
+    html{
+        font-size: 90%;
+    }
+
+    #navbar{
+        height: 3rem;
+        width: 100%;
+    }
+
+    #navbar a img{
+        width: 8rem;
+    }
+
+    #navbar ul{
+        display: none;
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 0.8rem;
+    }
+}

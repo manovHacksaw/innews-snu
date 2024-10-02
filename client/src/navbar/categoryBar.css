@@ -41,3 +41,13 @@
 .category-link:hover {
     background-color: #ddd;
 }
+
+@media (max-width: 480px) {
+    html{
+        font-size: 80%;
+    }
+
+    .category-bar {
+        overflow-x: auto;
+    }
+}

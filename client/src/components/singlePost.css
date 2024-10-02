@@ -64,3 +64,55 @@
     border-radius: 0.4rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
+
+@media (max-width: 480px) {
+    .main-container{
+        gap: 0.5rem;
+    }
+    
+    .single-news-area{
+        gap: 0.8rem;
+    }
+    
+    .single-post{
+        margin-top: 0.6rem;
+        height: auto;
+        width: 85%;   
+    }
+    
+    .single-news-tile {
+        padding: 0.6rem;
+        height: 98%;
+    }
+    
+    .news-thumbnail{
+        width: 90%;
+        margin-top: 0.6rem;
+    }
+    
+    .news-title{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    
+    .news-description{
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+    
+    .news-author-date{
+        margin-top: 1.3rem;
+    }
+    
+    .news-date {
+        font-size: 0.5em;
+    }
+    
+    .news-youtube{
+        margin: 1rem 0;
+        width: 20rem;
+        height: 11rem;
+    }
+}

@@ -28,3 +28,20 @@
 .share-buttons a:hover{
     scale: 1.1;
 }
+
+@media (max-width: 480px) {
+    .share-buttons{
+        gap: .5rem;
+        height: auto;
+        padding: 0.8rem 1rem;
+    }
+    
+    .share-buttons h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .share-buttons a{
+        font-size: 1.5rem;
+    }
+}
