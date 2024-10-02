@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'FigN'; 
+    src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto'; 
+    src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FigI'; 
+    src: url('/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -37,15 +52,19 @@
 }
 
 .news-title{
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
+    font-family: 'Noto'; 
     margin-top: 2rem;
 }
 
 .news-description{
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    line-height: 2rem;
     margin-top: 2rem;
+    color: #0a0a59;
+    font-family: 'FigN';
+    max-width: 90%;
 }
 
 .news-author-date{

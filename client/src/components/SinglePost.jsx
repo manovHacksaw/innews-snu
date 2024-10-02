@@ -52,7 +52,7 @@ export default function SinglePost({ articles }) {
                         />
                         <h3 className="news-title">{article.title}</h3>
                         <p className="news-description">
-                            {article.description.substring(0, 100)}...
+                            {article.description}...
                         </p>
                         <div className="news-youtube">
                             <iframe
