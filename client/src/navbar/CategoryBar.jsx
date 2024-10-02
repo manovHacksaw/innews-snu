@@ -1,6 +1,6 @@
 import React from 'react';
 import { category } from '../assets/data'; // Ensure the data is correctly imported
-import './CategoryBar.css';
+import './categoryBar.css';
 
 const CategoryBar = () => {
     return (
