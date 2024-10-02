@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './newsTiles.css';
 
 const NewsTiles = ({ articles, topRead }) => {
@@ -20,22 +21,24 @@ const NewsTiles = ({ articles, topRead }) => {
             <div className="news-tiles">
                 {articles.map((article) => (
                     <div key={article._id} className="news-tile">
-                        <img src={article.thumbnail} alt={article.title} className="tile-thumbnail" />
-                        <h3 className="tile-title">{article.title}</h3>
-                        <p className="tile-description">{article.description.substring(0, 100)}...</p>
-                        <div className="tile-author-date">
-                            <p className="tile-author">{article.author}</p>
-                            <p className="tile-date">{formatDate(article.createdAt)}</p>
-                        </div>
-                        {/* Sharing options */}
-                        {/* <div className="sharing-options">
-                            <button onClick={() => shareOnWhatsApp(article)} className="share-btn whatsapp-btn">
-                                Share on WhatsApp
-                            </button>
-                            <button onClick={() => shareOnTelegram(article)} className="share-btn telegram-btn">
-                                Share on Telegram
-                            </button>
-                        </div> */}
+                        <Link to={`/article/${article._id}`} style={{ textDecoration: 'none' }}>
+                            <img src={article.thumbnail} alt={article.title} className="tile-thumbnail" />
+                            <h3 className="tile-title">{article.title}</h3>
+                            <p className="tile-description">{article.description.substring(0, 100)}...</p>
+                            <div className="tile-author-date">
+                                <p className="tile-author">{article.author}</p>
+                                <p className="tile-date">{formatDate(article.createdAt)}</p>
+                            </div>
+                            {/* Sharing options */}
+                            {/* <div className="sharing-options">
+                                <button onClick={() => shareOnWhatsApp(article)} className="share-btn whatsapp-btn">
+                                    Share on WhatsApp
+                                </button>
+                                <button onClick={() => shareOnTelegram(article)} className="share-btn telegram-btn">
+                                    Share on Telegram
+                                </button>
+                            </div> */}
+                        </Link>
                     </div>
                 ))}
             </div>

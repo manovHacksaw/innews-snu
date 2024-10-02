@@ -32,7 +32,7 @@ const Feed = () => {
         .sort((a, b) => b.readCount - a.readCount)
         .slice(0, 5); // Top 5 most-read articles
 
-    const latestNews = news.slice(0, 9); // Latest 9 news articles for NewsTiles
+    // const latestNews = news.slice(0, 9); // Latest 9 news articles for NewsTiles
 
     return (
         <div className="feed">
@@ -41,7 +41,7 @@ const Feed = () => {
             {error && <p>{error}</p>}
             {news.length > 0 ? (
                 <>
-                    <NewsTiles articles={latestNews} topRead={topRead} />
+                    <NewsTiles articles={news} topRead={topRead} />
                 </>
             ) : (
                 <p>No news available.</p>
