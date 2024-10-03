@@ -1,3 +1,5 @@
-import Article from "./Article"
+import Article from "./Article/Article"
+import Navbar from "./Navbar/Navbar"
+import Footer from "./Footer/Footer"
 
-export {Article} 
+export {Article, Navbar, Footer} 

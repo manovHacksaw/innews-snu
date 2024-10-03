@@ -7,12 +7,20 @@ const newsSchema = new mongoose.Schema({
     trim: true
   },
   description: {
-     type: String,
-     required: true
+    type: String,
+    required: true
   },
   thumbnail: {
     type: String,  // URL for the image
     required: true
+  },
+  videoLink: {
+    type: String,  // URL for the YouTube video
+    required: false  // Not all news posts may have a video
+  },
+  category: {
+    type: String,  // Category of the news article
+    required: true  // Assuming every article should have a category
   },
   author: {
     type: mongoose.Schema.Types.ObjectId,

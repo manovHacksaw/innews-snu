@@ -4,6 +4,8 @@ import connectDB from './config/db.js';
 import cors from "cors";
 import newsRouter from './routes/news.routes.js';
 import userRouter from './routes/user.routes.js';
+import adminRouter from './routes/admin.routes.js';
+
 
 
 dotenv.config();
@@ -25,6 +27,7 @@ connectDB();
 // Use routes
 app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/admin",adminRouter )
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
